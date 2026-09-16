@@ -91,4 +91,11 @@ RESPOSTA:
 
 Se K for muito pequeno, o modelo se torna extremamente sensível a ruídos, dados incorretos ou outliers na vizinhança imediata. Se K for muito alto, o modelo tenderá a prever sempre a classe majoritária do conjunto de dados, ignorando os padrões e peculiaridades locais do novo cliente.
 
+7. PARTE V – ANÁLISE CRÍTICA 
 
+É possível afirmar que um modelo é melhor apenas porque apresentou um resultado numérico melhor? Justifique. Cite e explique pelo menos dois fatores a considerar antes de usar um modelo real. 
+Indique uma limitação ou cuidado importante do modelo escolhido. 
+
+RESPOSTA:
+
+Não. Um valor numérico superior em uma métrica de treino ou validação não garante que o modelo seja realmente melhor. Essa métrica isolada pode ser fruto de overfitting (quando o modelo decora os dados de treino, mas perde a capacidade de generalizar para novos dados reais) ou de um conjunto de dados com viés. Além disso, a escolha do melhor modelo deve ponderar a complexidade do algoritmo, o custo computacional, a velocidade de resposta e a interpretabilidade das decisões no contexto de negócio.
