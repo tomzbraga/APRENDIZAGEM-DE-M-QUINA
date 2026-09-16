@@ -1,5 +1,7 @@
 # APRENDIZAGEM-DE-MAQUINA
 
+O TRECHO DE CÓDIGO SE ENCONTRA ACIMA DESTE ARQUIVO README.
+
 2.1 Regressão Linear Simples
 
 Regressão Linear Simples é utilizada quando o objetivo é prever uma variável numérica contínua (variável-alvo) a partir de uma única variável explicativa (variável de entrada).
