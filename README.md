@@ -1,23 +1,29 @@
 # APRENDIZAGEM-DE-MAQUINA
-# APRENDIZAGEM-DE-MAQUINA
-Faculdade iesb
-2.1 Regressão Linear Simples : Regressão Linear Simples é utilizada quando o objetivo é prever uma variável numérica contínua (variável-alvo $Y$) a partir de uma única variável explicativa (variável de entrada $X$).
-Variável Explicativa ($X$): É o dado de entrada independente que utilizamos para estimar o resultado.
-Variável-Alvo ($Y$): É o valor numérico contínuo que pretendemos prever.
+
+2.1 Regressão Linear Simples
+
+Regressão Linear Simples é utilizada quando o objetivo é prever uma variável numérica contínua (variável-alvo) a partir de uma única variável explicativa (variável de entrada).
+
+Variável Explicativa: É o dado de entrada independente que utilizamos para estimar o resultado.
+
+Variável-Alvo: É o valor numérico contínuo que pretendemos prever.
+
 Aplicações: Prever o valor final de uma venda com base apenas na quantidade de itens comprados, prever o consumo de combustível baseado na distância percorrida, entre outros
-Ideia da Equação da Reta ($Y = \beta_0 + \beta_1 X + \epsilon$):$\beta_0$ (Intercepto): O valor onde a reta intercepta o eixo $Y$ quando $X = 0$.$\beta_1$ (Coeficiente Angular): Representa a taxa de variação esperada em $Y$ para cada unidade acrescida em $X$.$\epsilon$ (Erro de Resíduo): A diferença entre o valor real observado e o valor estimado pelo modelo.Exemplo: Prever o valor total gasto por um cliente ($Y$) utilizando apenas o total de produtos adicionados ao carrinho ($X$).Por que é "Simples"? É chamada de simples por utilizar estritamente uma única variável independente para construir a previsão
-.2 Regressão Linear MúltiplaA Regressão Linear Múltipla expande o modelo simples para situações onde duas ou mais variáveis explicativas ($X_1, X_2, \dots, X_n$) são necessárias para projetar a variável-alvo contínua ($Y$).
+
+Ideia da Equação da Reta: O valor onde a reta intercepta o eixo $Y$ quando $X = 0$.$\beta_1$ (Coeficiente Angular): Representa a taxa de variação esperada em $Y$ para cada unidade acrescida em $X$.$\epsilon$ (Erro de Resíduo): A diferença entre o valor real observado e o valor estimado pelo modelo.Exemplo: Prever o valor total gasto por um cliente ($Y$) utilizando apenas o total de produtos adicionados ao carrinho ($X$).Por que é "Simples"? É chamada de simples por utilizar estritamente uma única variável independente para construir a previsão
+
+2 Regressão Linear Múltipla
+
+A Regressão Linear Múltipla expande o modelo simples para situações onde duas ou mais variáveis explicativas ($X_1, X_2, \dots, X_n$) são necessárias para projetar a variável-alvo contínua ($Y$).
 Diferença para a Regressão Simples: Enquanto a regressão simples traça uma reta em um plano de duas dimensões, a múltipla cria um plano ou hiperplano para relacionar múltiplos fatores ao mesmo tempo.Papel das Variáveis Explicativas: Capturar o impacto combinado de diferentes aspectos do problema (por exemplo, tempo no site, número de visitas e compras passadas).Por que mais variáveis não garantem um modelo melhor? Incluir variáveis sem critérios adequados pode gerar multicolinearidade (variáveis fortemente correlacionadas que trazem informação redundante) ou causar overfitting (quando o modelo decora ruídos do histórico e perde o poder de generalização).
-3 Regressão LogísticaDiferente das regressões lineares, a Regressão Logística é focada em problemas de classificação binária, onde a variável-alvo assume apenas duas opções possíveis (ex.: Sim/Não, 0/1).Valor Numérico vs. Probabilidade: O algoritmo aplica a função sigmóide para converter os cálculos numéricos em uma escala de probabilidade contida entre $0$ e $1$ ($0\%$ a $100\%$).Exemplo 0/1: Prever se um acesso a uma conta é legítimo ($0$) ou uma tentativa de invasão ($1$).Papel do Limiar (Threshold): É o ponto de corte (frequentemente fixado em $0.5$). Se a probabilidade estimada for superior ou igual a $0.5$, o registro é classificado como $1$; caso contrário, recebe a classificação $0$
-.4 KNN - K-Nearest Neighbors (K-Vizinhos Mais Próximos)O KNN é uma técnica baseada em instâncias que realiza previsões através da comparação do novo dado com os registros históricos mais próximos.Técnica Baseada em Instâncias: O algoritmo não gera uma fórmula matemática durante o treinamento; ele armazena a base de dados e efetua os cálculos de proximidade no momento exato de efetuar a classificação.Significado do K: Refere-se à quantidade de vizinhos históricos mais próximos que serão consultados para a decisão.Vizinhança e Distância: O algoritmo mede a distância (como a distância Euclidiana) entre o novo ponto e todos os registros antigos.Definição da Classe: A classe do novo elemento é determinada pela votação majoritária entre seus $K$ vizinhos mais próximos.Influência do K:$K$ muito pequeno ($K=1$): Torna o modelo excessivamente sensível a ruídos ou dados fora do padrão (causando overfitting).$K$ muito grande: Faz com que o modelo considere vizinhos distantes e irrelevantes, suavizando excessivamente as fronteiras e priorizando sempre a classe majoritária (causando underfitting).
 
- 
+3 Regressão Logística
 
+Diferente das regressões lineares, a Regressão Logística é focada em problemas de classificação binária, onde a variável-alvo assume apenas duas opções possíveis (ex.: Sim/Não, 0/1).Valor Numérico vs. Probabilidade: O algoritmo aplica a função sigmóide para converter os cálculos numéricos em uma escala de probabilidade contida entre $0$ e $1$ ($0\%$ a $100\%$).Exemplo 0/1: Prever se um acesso a uma conta é legítimo ($0$) ou uma tentativa de invasão ($1$).Papel do Limiar (Threshold): É o ponto de corte (frequentemente fixado em $0.5$). Se a probabilidade estimada for superior ou igual a $0.5$, o registro é classificado como $1$; caso contrário, recebe a classificação $0$
 
+4 KNN - K-Nearest Neighbors (K-Vizinhos Mais Próximos)
 
- 
-
-
+O KNN é uma técnica baseada em instâncias que realiza previsões através da comparação do novo dado com os registros históricos mais próximos.Técnica Baseada em Instâncias: O algoritmo não gera uma fórmula matemática durante o treinamento; ele armazena a base de dados e efetua os cálculos de proximidade no momento exato de efetuar a classificação.Significado do K: Refere-se à quantidade de vizinhos históricos mais próximos que serão consultados para a decisão.Vizinhança e Distância: O algoritmo mede a distância (como a distância Euclidiana) entre o novo ponto e todos os registros antigos.Definição da Classe: A classe do novo elemento é determinada pela votação majoritária entre seus $K$ vizinhos mais próximos.Influência do K:$K$ muito pequeno ($K=1$): Torna o modelo excessivamente sensível a ruídos ou dados fora do padrão (causando overfitting).$K$ muito grande: Faz com que o modelo considere vizinhos distantes e irrelevantes, suavizando excessivamente as fronteiras e priorizando sempre a classe majoritária (causando underfitting).
 
 4. PARTE II – CASO REAL
 Uma empresa de comércio eletrônico possui dados históricos de clientes e vendas e identificou quatro necessidades:
